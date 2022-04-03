@@ -1,0 +1,845 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bootstrap assignment2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+                                                                   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+         *{   
+          margin: 0;
+          padding: 0;
+        }
+        .background1 {
+            background: url('https://previews.123rf.com/images/nnudoo/nnudoo1705/nnudoo170500171/78264471-man-and-hope-concept-man-opening-window-curtains-business-concept-.jpg');
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: 100%;
+            height: 20vh;
+        } 
+        .black {
+            background-color:  rgba(60, 61, 61, 0.692);
+        } 
+       .Learnmore {
+           background-color: rgba(31, 37, 37, 0.692);
+       }
+       .background2 {
+           background: url('https://static.vecteezy.com/system/resources/previews/004/497/401/non_2x/gray-and-white-gradient-diagonal-lines-pattern-repeat-stripes-texture-background-vector.jpg');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           min-height: 10vh;
+       }
+       .background3 {
+           background: url('https://wallpaperaccess.com/full/381417.jpg');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; 
+           min-height: 30vh;
+       }
+       .pic1 {
+        background: url('https://w0.peakpx.com/wallpaper/455/904/HD-wallpaper-apple-laptop-on-white-table-macbook.jpg');
+          min-height: 340px;
+          background-repeat: no-repeat;  
+          background-position: center;
+          background-size: cover; 
+       }
+       .pic2 {
+        background: url('https://www.xda-developers.com/files/2021/06/Best-Macs-1024x683.jpeg');
+          min-height: 340px;
+          background-repeat: no-repeat;  
+          background-position: center;
+          background-size: cover;
+       }
+       .pic3 {
+        background: url('https://www.inside-digital.de/img/asus-laptop-mit-zubehoer-1200x900.jpg');
+          min-height: 340px;
+          background-repeat: no-repeat;  
+          background-position: center;
+          background-size: cover;
+       }
+       .pic4 {
+        background: url('https://cdn.pixabay.com/photo/2017/12/29/12/01/laptop-3047409__340.jpg');
+          min-height: 340px;
+          background-repeat: no-repeat;  
+          background-position: center;
+          background-size: cover;
+       }
+       .smallbox1 {
+           width: 13px;
+           height: 13px;
+           display: inline-block;
+       }
+       .purple {
+           background-color: rgba(68, 15, 104, 0.692);  
+           min-height: 30vh;
+       }
+       .overallslide {
+            min-width: 100%;
+            min-height: 600px;
+            background-color: transparent;
+        }
+        .boxPurple {
+           width: 100%;
+           min-height: 10vh;
+           background-color: rgb(68, 15, 104);
+        }
+        .img-size {
+                height: 200px; 
+                width: 160px;
+            }                                 
+        .btnsimple:active {
+            background-color: rgb(26, 25, 24);
+        }
+        .background4 {
+            background: url('https://wallpaperaccess.com/full/381417.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        .yellow {
+            background-color: rgba(255, 192, 5, 0.863);
+        }
+        .borderleft {
+            border-right: solid rgba(255, 255, 255, 0.971) 1px; 
+        }
+        .background5 {
+           background: url('https://static.vecteezy.com/system/resources/previews/004/497/401/non_2x/gray-and-white-gradient-diagonal-lines-pattern-repeat-stripes-texture-background-vector.jpg');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+        }
+        @media only screen and (min-width:200px) and (max-width:500px) {
+            .background1 {
+               min-height: 120vh;  
+            }
+            .black {
+                min-height: 120vh;
+            }
+            .navbar {
+                padding-top: 2.5%;  
+            } 
+            .nav-item {
+                font-size: 11px;
+                font-weight: bold;   
+            }
+            .navbar-brand {
+                font-size: medium;
+            }
+            .nice {
+                text-transform: capitalize;
+                font-size: 1.2rem; 
+                font-weight: 800;
+                padding-top: 12rem; 
+            }
+            
+            .toptext {
+                font-size: 12px;
+                font-weight: 500;
+                color: #fff;
+            }
+            .Learnmore {
+                padding: 1.5px 3px;
+               font-weight: small;
+               margin-left: 1.5px;
+            }
+            .Download {
+                padding: 1.5px 3px;
+               font-weight: small;
+               margin-left: 1.5px;
+            }
+            
+            .smallbox1 {    
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+            }
+            .img-size {
+                height: 200px; 
+                width: 160px;
+            }
+            .card-img-top {
+                width: 100%;
+                height: 65vw;
+                object-fit: cover;    
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:900px) {
+            .background1 {
+               min-height: 120vh;
+            }
+            .black {
+                min-height: 120vh;
+            }
+            .navbar {
+                padding-top: 1.5%;  
+            }
+            .nav-item {
+                font-size: small;
+                font-weight: 700; 
+            } 
+            .navbar-brand {
+                font-size: large;
+            }
+            .nice {
+                text-transform: capitalize;
+                font-size: 1.5rem; 
+                font-weight: 700;
+                padding-top: 15rem; 
+            }
+        
+            .toptext {
+                font-size: small;
+                font-weight: bold;
+                color: #fff;
+            }
+            .Learnmore {
+                padding: 4px 8px;
+               font-weight: bold;
+               margin-right: 4px;
+            }
+            .Download {
+                padding: 4px 8px;
+               font-weight: bold;
+               margin-left: 4px;
+            }
+            .smallbox1 {
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+            }
+            .img-size {   
+                height: 200px; 
+                width: 160px;
+            } 
+            .card-img-top {
+                width: 100%;
+                height: 20vw;
+                object-fit: cover;
+            } 
+        }
+        @media only screen and (min-width:900px) and (max-width:2560px) {  
+            .background1 {
+               min-height: 120vh; 
+            }
+            .black {
+                min-height: 120vh; 
+            }
+            .navbar {                             
+                padding-top: 5%;
+
+            }
+            .nav-item {
+                font-size: smaller;
+                font-weight:bolder; 
+            }
+            .navbar-brand {  
+                font-size: xx-large;
+            }
+            .nice {
+                text-transform: capitalize;  
+                font-size: 2.5rem; 
+                font-weight:900;
+                font-family: sans-serif;
+                padding-top: 15rem; 
+            }
+        
+            .toptext {
+                font-size: small;
+                font-weight: bold;  
+                color: #fff;    
+            }
+            .Learnmore {
+               padding: 8px 16px;
+               font-weight: bold;
+               margin-right: 8px;
+            }
+            .Download {
+                padding: 8px 16px;
+               font-weight: bold;
+               margin-left: 8px;
+            }
+            .card-img-top {
+                width: 100%;
+                height: 30vw;
+                object-fit: cover;
+            } 
+        } 
+        @media only screen and (min-width:900px) and (max-width:992px) {  
+            .card-img-top {
+                width: 100%;
+                height: 25vw;
+                object-fit: cover;
+            } 
+        } 
+        @media only screen and (min-width:500px) and (max-width:768px) { 
+            .card-img-top {
+                width: 100%;
+                height: 60vw;
+                object-fit: cover;  
+            }                                                               
+            .bgScolor {
+                padding-bottom: 2%;
+            }
+            .padding1 {
+                padding-bottom: 0; 
+            }
+        }
+        @media only screen and (min-width:768px) and (max-width:2560px) { 
+        .padding1 {
+           padding-bottom: 5%; 
+        }
+        .bgScolor {
+                padding-bottom: 5%;
+                background-color: rgb(1, 31, 1);
+            }
+    }
+    @media only screen and (min-width:200px) and (max-width:769px) { 
+        .bgScolor {
+                background-color: rgb(1, 31, 1);
+            }
+    } 
+    @media only screen and (min-width:200px) and (max-width:576px) { 
+      .borderleft {
+          border: none;
+      }
+      
+    }
+    @media only screen and (min-width:768px) and (max-width:2560px) { 
+         .team1 {
+             display: flex;
+             padding-bottom: 1em;
+         }
+         .pichrp { 
+             margin-right: 1rem; 
+         }
+         .paddsub {
+            padding-bottom: 2rem;
+        } 
+        .background5 {
+            padding-bottom: 2px;
+        }
+      
+      
+    } 
+    @media only screen and (min-width:200px) and (max-width:768px) { 
+        .team1 {
+            text-align: center;
+            padding-bottom: 14px;
+        }
+        .pichrp {
+            margin: 0;   
+        }
+        .paddsub {
+            padding-bottom: 0;
+        }
+        .background5 {
+            padding-bottom: 15px;
+        }
+
+      .padd1 {
+          padding-bottom: 1px; 
+       }
+      
+    }
+    @media only screen and (min-width:100px) and (max-width:576px) { 
+        .Address1 {
+            display: block;
+            text-align: center;
+        }
+        .subaddress1 {
+           border: none;
+           text-align: center;
+        }
+        .subaddress2 {
+            border: none;
+            text-align: center;
+        }
+        .subaddress1-0 {
+            padding: 0; 
+        }
+        .paddingB {
+          padding: 0;
+      }
+      .background4 {
+            min-height: 5vh;
+        }
+        .yellow {
+            min-height: 5vh; 
+        } 
+      .background5 { 
+          min-height: 15vh;
+      }
+    }
+    @media only screen and (min-width:576px) and (max-width:2560px) { 
+        .Address1 {
+            display: flex;
+        }
+        .subaddress1 {
+            border-left: solid 1px ;
+            color: rgb(181, 178, 178); 
+            height: 33px;
+        }
+        .subaddress2 {
+            border-left: solid 1px;
+            color: rgb(181, 178, 178); 
+            height: 50px;
+        }
+        .subaddress1-0 {
+             margin-right: 2rem; 
+        }
+        .paddingB {
+          padding: 40px;
+      }
+      .background4 {
+            min-height: 5vh;
+        }
+        .yellow {
+            min-height: 5vh;  
+        } 
+        .background5 {    
+          min-height: 15vh;
+      }
+    }
+    </style>  
+</head>
+<body> 
+    <div class="background1">     
+        <header class="black"> 
+            <nav class="navbar navbar-expand-lg navbar-dark">            
+            <div class="container">  
+              <a href="#" class="navbar-brand" style="text-transform: uppercase;">
+               logo design
+              </a> 
+      
+              <button  type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+              aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation"> 
+              <span class="navbar-toggler-icon"></span> 
+              </button> 
+      
+              <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav ms-auto  text-end"> 
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">about</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">Portfolio</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">testimonials</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">services</a></li> 
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">blog</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">our team</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link active" style="text-transform: capitalize;">contact us</a></li>  
+                </ul>
+              </div>
+            </div>  
+            </nav>
+          
+        <div class="container-fluid">
+        <div class="container"> 
+            <div class="row-1">  
+                <div class="col-12 nice" style="display: flex; justify-content: center;">
+                    <p class="h2 text-light"> clean<span class="smallbox1 bg-warning"></span></p> 
+                    <p class="h2 text-light">slick<span class="smallbox1 bg-warning"></span></p>
+                    <p class="h2 text-light">pixel perfect</p>     
+                </div>
+                <div class="col-12"> 
+                    <p class="toptext text-center mt-3 mb-5">    
+                        IIdy is a great one-page theme, perfect for developers and designers but also for someone who just wants a 
+                         new website for his business.try it now!
+                    </p> 
+                    <p class="text-center">
+                    <button type="button" class="btn btn-outline-secondary text-center text-light Learnmore">Learn more</button>                   
+                    <button type="button" class="btn btn-warning  text-center text-light  Download">Download</button>
+                    </p>
+                </div>
+            </div>    
+        </div>     
+        </div>
+    </div>
+    </header>       
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row">
+            <div class="col-12">
+            <p class="h3 text-center text-dark fs-4 fw-bold pt-5 pb-3">About</p>
+            <p class="h6 text-center text-secondary fs-6 fw-200 pb-5">
+                It is an amazng one-page theme with great feature that offers an incredible experience. It is easy to install, make changes, adept for your
+                business. A modern design with clean lines and styling for a wide variety of contact,exactly how a business design should be. You can add
+                as many images as you want to the main header area and turn them into slider.
+            </p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="container pt-3">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3">
+            <div class="col col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
+                <div class="progress" style="height: 25px; border: 0; margin-bottom: 3%;">
+                <div class="progress-bar  progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%; background-color: rgb(216, 91, 60);" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div> 
+                <h5 class="pt-1 pb-4" style="text-align: start; text-transform: capitalize; font-size: medium; font-weight: 500; color:  rgb(216, 91, 60);"><i class="fa-solid fa-font"></i>&nbsp;&nbsp;typography</h5> 
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
+                <div class="progress" style="height: 25px; border: 0; margin-bottom: 3%;">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 82%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">82%</div> 
+                </div>
+                <h5 class="pt-1 pb-4 text-warning" style="text-align: start; text-transform: capitalize; font-size: medium; font-weight: 500;"><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;design</h5>
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="progress" style="height: 25px; border: 0; margin-bottom: 3%;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 86%; background-color: rgb(104, 11, 180);" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">86%</div> 
+                </div>
+                <h5 class="pt-1 pb-5" style="text-align: start; text-transform: capitalize; font-size: medium; font-weight: 500; color:  rgb(104, 11, 180);"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;development</h5>
+            </div>
+            </div>
+        </div>   
+    </div>  
+    <div class="container-fluid background2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h3 text-center text-dark fs-4 fw-bold mt-5 pb-1">Projects</p>
+                    <p class="h6 text-center text-secondary fs-6 fw-200 pb-5">You,ll love our work. Check it out!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4">
+            <div class="col col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="pic1"></div>   
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="pic2"></div>
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="pic3"></div>
+            </div>
+            <div class="col col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">  
+                <div class="pic4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="background3">
+    <header class="purple"> 
+    <div class="container-fluid">
+    <div class="container">
+        <div id="carouselContent" class="carousel slide carousel-light" data-bs-ride="carousel" data-bs-interval="3000">  
+            <button type="button" data-bs-target="#carouselContent" data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" data-bs-target="#carouselContent" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span> 
+            </button> 
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselContent" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px; border-radius: 50%;"></button>
+                <button type="button" data-bs-target="#carouselContent" data-bs-slide-to="1" style="width: 10px; height: 10px; border-radius: 50%;"></button> 
+                <button type="button" data-bs-target="#carouselContent" data-bs-slide-to="2" style="width: 10px; height: 10px; border-radius: 50%;"></button>
+            </div>
+          
+            <div class="carousel-inner py-5">    
+                <div class="carousel-item active text-center overallslide pt-4"> 
+                    <p class="h3 text-center text-light fs-3 fw-bold">Testimonials</p>  
+                    <img src="https://cutewallpaper.org/22/money-heist-professor-wallpapers/1741523475.jpg" class="image-fluid rounded-pill mt-3 img-size">
+   
+                    <div class="carousel-caption"> 
+                    <p class="h6 container boxPurple fw-400 text-light text-center px-3 py-4 mb-3" style="font-size: small;">
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate similique cupiditate vel fugit, 
+                        quis accusantium, at adipisci optio vitae tempora distinctio fugiat consectetur ducimus, porro culpa nisi ex esse doloremque?"
+                    </p>
+                    <h3>Professor</h3>  
+                    </div>                          
+                </div> 
+
+                <div class="carousel-item  text-center overallslide pt-4">
+                    <p class="h3 text-center text-light fs-3 fw-bold">Testimonials</p>  
+                    <img src="https://bingeddata.s3.amazonaws.com/uploads/2021/08/How-Has-Tokyo-Evolved-As-The-Necessary-Evil-In-Netflixs-Money-Heist.jpg" class="img-fluid rounded-pill mt-3 img-size">
+                    <div class="carousel-caption">
+                       <p class="h6 container boxPurple fw-400 text-light text-center px-3 py-4 mb-3" style="font-size: small;">
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate similique cupiditate vel fugit, 
+                        quis accusantium, at adipisci optio vitae tempora distinctio fugiat consectetur ducimus, porro culpa nisi ex esse doloremque?"
+                       </p>
+                       <h3>Tokyo</h3> 
+                    </div>
+                </div>
+
+                <div class="carousel-item  text-center overallslide pt-4">
+                    <p class="h3 text-center text-light fs-3 fw-bold">Testimonials</p> 
+                    <img src="https://i0.wp.com/www.livestickers.com/wp-content/uploads//2020/09/Money_Heist46.png?resize=512%2C511&ssl=1" class="img-fluid rounded-pill mt-3 img-size">
+                    <div class="carousel-caption">
+                    <p class="h6 container boxPurple fw-400 text-light text-center px-3 py-4 mb-3" style="font-size: small;">
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate similique cupiditate vel fugit, 
+                        quis accusantium, at adipisci optio vitae tempora distinctio fugiat consectetur ducimus, porro culpa nisi ex esse doloremque?"
+                    </p>
+                    <h3>Berlin</h3>
+                    </div>                  
+                </div>
+            </div> 
+        </div> 
+    </header>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row-1">
+                <div class="col-12"> 
+                    <p class="display-3 text-center text-dark fs-3 fw-bold pt-5">Services</p>  
+                    <p class="lead text-center text-secondary pb-5" style="font-size: medium; font-weight: 500;">In order to help you grow your business,selected experts can advise you in the following areas:</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3">
+                <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center"> 
+                    <i class="fa-solid fa-pencil  pt-2 pb-3 fs-2 fw-bold" style="color: rgb(216, 91, 60);"></i>
+                    <p class="display-4 text-center fs-4 fw-bold pt-1" style="color: rgb(216, 91, 60);">Web Design</p>
+                    <p class="lead text-center text-secondary pt-3" style="font-size: medium; font-weight: 500;">  
+                        Consectetur adipisicing elit. Praesent molestie urna
+                        hendrerit erat tincidunt tempus. Aliquam a leo risus.
+                        fusce a metus non augue dapibus porttitor at in 
+                        mauris. Pellentesque commodo...
+                    </p>
+                </div>
+                <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center">
+                    <i class="fa-solid fa-code pt-2 pb-3 text-warning fs-2 fw-bold"></i>
+                    <p class="display-4 text-center fs-4 fw-bold pt-1 text-warning">WEB DEVELOPMENT</p>
+                    <p class="lead text-center text-secondary pt-3" style="font-size: medium; font-weight: 500;">
+                        Consectetur adipisicing elit. Praesent molestie urna
+                        hendrerit erat tincidunt tempus. Aliquam a leo risus.
+                        fusce a metus non augue dapibus porttitor at in 
+                        mauris. Pellentesque commodo...
+                    </p>  
+                </div>
+                <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4  text-center">
+                    <i class="fa-regular fa-magnifying-glass  pt-2 pb-3 fs-2 fw-bold" style="color: rgb(104, 11, 180);"></i>
+                    <p class="display-4 text-center fs-4 fw-bold pt-1" style="color: rgb(104, 11, 180);">SEO Analisys</p>
+                    <p class="lead text-center text-secondary pt-3 pb-5" style="font-size: medium; font-weight: 500;">
+                        Consectetur adipisicing elit. Praesent molestie urna
+                        hendrerit erat tincidunt tempus. Aliquam a leo risus.
+                        fusce a metus non augue dapibus porttitor at in 
+                        mauris. Pellentesque commodo...   
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="bgScolor">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row-1"> 
+                    <div class="col-12 text-center"> 
+                        <p class="h3 text-center text-light fs-3 fw-bold pt-5 pb-1">Latest News</p>
+                        <p class="h6  text-center text-secondary pb-4" style="font-size: medium; font-weight: 500;">if you are interested in the latest articles in the industry,take a sneak peek at our blog.You have nothing to loose!</p>
+                        <button type="button" class="btn btn-warning text-center text-light px-5 py-2 mt-2 mb-5" style="border-radius: 3px; font-size: small; font-weight: bold;"><i class="fa-solid fa-circle-chevron-right me-2"></i>See blog</button>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3"> 
+                    <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-start mb-5 padding1"> 
+                        <div class="card h-100" style=" border: none; border-radius: 0;"> 
+                            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2021/08/money_heist_raquel-8aa0e1a.jpg"  class="card-img-top" style="border-radius: 0;">
+                            <div class="card-body">
+                              <h5 class="card-title fs-5 fw-bold py-3 pe-3" style="color: rgb(99, 97, 97);">We Have Made this Theme SEO Friendly</h5>
+                              <p class="card-text py-2 pe-2" style="color: rgb(160, 156, 156); font-size:small;">This One Page WordPress theme is fully 
+                                  SEO friendly and is ready to help you to achieve the highest rankings...
+                              </p>
+                              <a href="#" type="button" class="btn btnsimple text-center text-warning mt-2" style="font-size: small; font-weight: 500;"><i class="fa-solid fa-circle-chevron-right me-2"></i>Read more</a> 
+                            </div>   
+                        </div>               
+                    </div>              
+
+                        <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-start mb-5">  
+                            <div class="card h-100" style=" border: none; border-radius: 0; ">
+                                <img src="https://mcdn.wallpapersafari.com/medium/82/57/v9m8eK.jpg" class="card-img-top" style="border-radius: 0;">
+                                <div class="card-body">
+                                  <h5 class="card-title fs-5 fw-bold py-3 pe-3" style="color: rgb(59, 58, 58);">Stunning One Page WordPress Theme For Masses</h5>
+                                  <p class="card-text py-2 pe-2" style="color: rgb(90, 89, 89); font-size:small;">
+                                     This theme is not just free, it is free for private and commercial use since it is licensed under GPL...
+                                  </p>
+                                  <a href="#" type="button" class="btn btnsimple text-center text-warning mt-2" style="font-size: small; font-weight: 500;"><i class="fa-solid fa-circle-chevron-right me-2"></i>Read more</a> 
+                                </div>
+                            </div>           
+                        </div>      
+                  
+                    <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-start mb-5 padding1">  
+                        <div class="card h-100" style=" border: none; border-radius: 0;">
+                            <img src="https://glamourpath.com/uploads/biography/2019/12/17/feature-1576569328070.jpg" class="card-img-top" style="border-radius: 0;">
+                            <div class="card-body">
+                              <h5 class="card-title fs-5 fw-bold py-3 pe-3" style="color: rgb(99, 97, 97);">Hello world!</h5>
+                              <p class="card-text py-2 pe-2" style="color: rgb(160, 156, 156); font-size:small;">
+                                Welcome to colorlib.com. This is our first post around this WordPress theme.Now show that you can make out of it....
+                              </p>
+                              <a href="#" type="button" class="btn btnsimple text-center text-warning mt-3" style="font-size: small; font-weight: 500;"><i class="fa-solid fa-circle-chevron-right me-2"></i>Read more</a> 
+                            </div>
+                        </div>
+                    </div>                        
+                </div>        
+            </div>  
+        </div>     
+        </div> 
+        <div class="background4">
+        <div class="yellow">
+        <div class="container-fluid paddingB">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3">
+                <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-light borderleft padd1">
+                   <p class="h3" style="font-size: 3rem; font-weight: bolder;">14</p>
+                   <p class="h5" style="text-transform: uppercase; font-size: small; font-weight: bold;">projects</p>
+                </div>  
+                <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-light borderleft padd1">
+                    <p class="h3" style="font-size: 3rem; font-weight: bolder;">7</p>
+                    <p class="h5" style="text-transform: uppercase; font-size: small; font-weight: bold;">clients</p>  
+                </div>
+                <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center text-light padd1">
+                    <p class="h3" style="font-size: 3rem; font-weight: bolder;">14</p>   
+                    <p class="h5" style="text-transform: uppercase;  font-size: small; font-weight: bold;">coffes</p>
+                </div>
+            </div>   
+        </div>
+        </div>       
+        </div>
+        </div>
+        <div class="container-fluid background5">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                       <p class="h3 text-secondary fs-2 fw-bold pt-3 pb-2">Team</p>
+                       <p class="h5 paddsub" style="color: rgb(133, 129, 129); font-size: small; font-weight: 400;">Meet the people that are going to take your business to the next level.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 px-3 pt-4"> 
+                    <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 team1">
+                       <img src="https://virginradio.ro/wp-content/uploads/2020/04/Helsinki-La-Casa-de-Papel-1.jpg" style="width: 100px; height: 100px;" class="pichrp image-fluid rounded-circle">
+                       <div>
+                           <p class="h4 fs-3 fw-bold text-left text-secondary pb-1">Helsinki</p> 
+                           <p class="h6 text-left text-danger pb-3" style="font-size: small; font-weight: 400;">Web Designer</p>
+                           <p class="h6 text-left" style="color: rgb(121, 114, 114); font-size: small; font-weight: 400;">Creative,detail-oriented,always focused.</p>
+                           <i class="fab fa-facebook-f" style="border: solid 1px rgb(221, 75, 75); color:rgb(221, 75, 75);  border-radius: 50%; padding: 4px 7px;"></i>
+                           <i class="fab fa-twitter" style="border: solid 1px rgb(221, 75, 75); color:rgb(221, 75, 75);  border-radius: 50%; padding: 4px;"></i>  
+                           <i class="fab fa-linkedin-in" style="border: solid 1px rgb(221, 75, 75); color:rgb(221, 75, 75);  border-radius: 50%; padding: 4px 5px;"></i>  
+                       </div> 
+                    </div>  
+                    <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 team1">
+                        <img src="https://im.indiatimes.in/content/2020/Aug/RIO1_5f2ba5b149f97.jpg?w=725&h=543" style="width: 100px; height: 100px;" class="pichrp image-fluid rounded-circle ">
+                        <div>
+                            <p class="h4 fs-3 fw-bold text-left text-secondary pb-1">Rio</p> 
+                            <p class="h6 text-left text-warning pb-3" style="font-size: small; font-weight: 400;">SEO Specialist</p> 
+                            <p class="h6 text-left" style="color: rgb(121, 114, 114); font-size: small; font-weight: 400;">Curious tech-geech and gets serious when it comes to work.</p>
+                            <i class="fab fa-facebook-f  text-warning" style="border: solid 1px orange; border-radius: 50%; padding: 4px 7px;"></i>
+                            <i class="fab fa-twitter  text-warning" style="border: solid 1px orange;  border-radius: 50%; padding: 4px;"></i>  
+                            <i class="fab fa-linkedin-in text-warning" style="border: solid 1px orange; border-radius: 50%; padding: 4px 5px;"></i>
+                        </div>
+                     </div>
+                     <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 team1">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/la-casa-de-papel-part3-e02-unit-00523-1563307071.jpg?crop=1.00xw:0.669xh;0,0.0136xh&resize=480:*" style="width: 100px; height: 100px;" class="pichrp image-fluid rounded-circle">
+                        <div>
+                            <p class="h4 fs-3 fw-bold text-left text-secondary pb-1">Palermo</p> 
+                            <p class="h6 text-left  pb-3" style="font-size: small; font-weight: 400; color: rgb(92, 10, 164);">Developer</p>
+                            <p class="h6 text-left" style="color: rgb(121, 114, 114); font-size: small; font-weight: 400;">Enthusiastic, passionate with great sense of humor.</p>
+                            <i class="fab fa-facebook-f" style="border: solid 1px rgb(92, 10, 164); color: rgb(92, 10, 164); border-radius: 50%; padding: 4px 7px;"></i>
+                            <i class="fab fa-twitter" style="border: solid 1px rgb(92, 10, 164); color:rgb(92, 10, 164);  border-radius: 50%; padding: 4px;"></i>  
+                            <i class="fab fa-linkedin-in" style="border: solid 1px rgb(92, 10, 164); color:rgb(92, 10, 164);  border-radius: 50%; padding: 4px 5px;"></i>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container">
+                <p class="h3 text-center fs-2 fw-bold text-secondary pt-4 pb-5">Contact us</p>
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 pb-3 ">
+                    <div class="col col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 Address1 pb-5">
+                       <p class="h5 text-warning  subaddress1-0" style="font-size: smaller; font-weight: 400;">Address</p>
+                       <div class="subaddress1">   
+                           <p class="h4 ps-3" style="color: rgb(96, 92, 92); font-size: smaller; font-weight: 400;">Street 221B Baker street,<br>
+                             London,UK</p> 
+                       </div>  
+                    </div> 
+                    <div class="col col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 Address1 pb-5">
+                        <p class="h5 text-warning  subaddress1-0" style="font-size: smaller; font-weight: 400;">Customer Support</p>
+                        <div class="subaddress2"> 
+                            <p class="h4 ps-3" style="color: rgb(96, 92, 92); font-size: smaller; font-weight: 400;">E-mail:
+                                <br>[email protected]<br>Phone:(555) 555-5555
+                            </p> 
+                        </div>
+                     </div>  
+                     <div  class="col col col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 Address1 pb-5">  
+                        <i class="fab fa-facebook-f me-3" style="color:  rgb(118, 114, 114);"></i>   
+                        <i class="fab fa-twitter me-3" style="color: rgb(129, 125, 125);"></i>   
+                        <i class="fab fa-linkedin-in" style="color:  rgb(123, 119, 119);"></i>     
+                     </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 pb-3">
+                   <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                   <form action="" method="POST"> 
+                    <div class="form-group pb-2">
+                        <label for="name"  class="text-secondary" style="font-size: smaller; font-weight: 400;">Your Name<span class="text-muted ms-1">(required)</span></label>
+                        <input type="text" class="form-control" id="name" name="name" style="border-radius: 0;"  required>
+                    </div>  
+                   </div> 
+                   <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"> 
+                    <div class="form-group pb-2">
+                        <label for="name"  class="text-secondary"  style="font-size: smaller; font-weight: 400;">Your Email<span class="text-muted ms-1">(required)</span></label>
+                        <input type="text" class="form-control" id="name" name="name" style="border-radius: 0;" required>
+                    </div> 
+                   </div>
+                   <div class="col col col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group pb-2">  
+                        <label for="name" class="text-secondary"  style="font-size: smaller; font-weight: 400;">Subject</label>
+                        <input type="text" class="form-control" id="name" name="name" style="border-radius: 0;" required>
+                    </div> 
+                   </div>  
+                   <div class="col col col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="pt-1 pb-3 form-group">
+                        <label for="message"  class="text-secondary" style="font-size: smaller; font-weight: 400;">Your Message</label>
+                        <textarea name="message" id="message" class="form-control" style="border-radius: 0;" rows="3"></textarea>
+                    </div>
+                    <div class="text-end">
+                    <button type="button" class="btn btn-warning fs-6 fw-400 mt-4 text-light px-5 py-1 text-center">Send</button>
+                    </div>
+                    </div>
+                </div>
+                </div>     
+                </div>   
+                </form>                  
+            </div> 
+        </div>  
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 pt-5">
+                    <div class="col col col-sm-9 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                      <p class="h5 fw-bold text-light " style="text-transform: uppercase;">products</p>
+                      <p class="h6 fw-lighter pt-3" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Our work</p> 
+                      <p class="h6 fw-lighter  pt-2" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Club</p> 
+                      <p class="h6 fw-lighter  pt-2" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>News</p> 
+                      <p class="h6 fw-lighter  pt-2 pb-5" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Announcement</p>  
+                    </div>
+                    <div class="col col col-sm-9 col-md-3 col-lg-3 col-xl-3 col-xxl-3">  
+                        <p class="h5 fw-bold text-light" style="text-transform: uppercase;">information</p>
+                        <p class="h6 fw-lighter  pt-3" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Pricing</p> 
+                        <p class="h6 fw-lighter  pt-2" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Terms</p> 
+                        <p class="h6 fw-lighter  pt-2" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Affiliates</p> 
+                        <p class="h6 fw-lighter  pt-2 pb-5" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Blog</p>     
+                    </div>
+                    <div class="col col col-sm-9 col-md-3 col-lg-3 col-xl-3 col-xxl-3">   
+                        <p class="h5 fw-bold text-light " style="text-transform: uppercase;">support</p> 
+                        <p class="h6 fw-lighter  pt-3" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Documentation</p> 
+                        <p class="h6 fw-lighter  pt-2" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>FAQs</p> 
+                        <p class="h6 fw-lighter  pt-2" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Forums</p> 
+                        <p class="h6 fw-lighter  pt-2 pb-5" style="color: lightgray;"><i class="fa-solid fa-angle-right pe-3"></i>Contact</p>   
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>     
+</html>
